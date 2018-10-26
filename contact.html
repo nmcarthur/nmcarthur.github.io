@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<link rel="icon" href="images/favicon-32x32.png" type="images/x-icon">
+<link href="styles/contact.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Charmonman|Marck+Script|Tangerine" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<nav>
+<div id="navbar">
+<a href="main.html">Home</a>
+<a href="about.html">About</a>
+<a href="workhistory.html">Work History</a>
+<a class="active" href="contact.html">Contact</a>
+</div>
+</nav>
+<header>
+<h1>Contact information:</h1>
+</header>
+<main><h1>Phone Number: (239)699-2758</h1>
+<h1>Email: NMCARTHUR@LIVE.COM</h1>
+</main>
+<footer>
+<ul class="social-icons">
+<li><a href="http://www.linkedin.com/in/nicholas-mcarthur-90318437.com" target="_blank"><img src="images/linkedin.jpg"></a></li>
+<li><a href="https://github.com/nmcarthur/.github.io" target="_blank"><img src="images/github.jpg"></a></li>
+<li><a href="https://twitter.com/Nicko83931651?lang=en" target="_blank"><img src="images/Twitter_icon.png" ></a></li>
+<li><a href="tel:2396992758"><img src="images/phone.jpg" ></a></li>
+<li><a href="mailto:nmcarthur@live.com"><img src="images/Outlook.png" ></a></li>       
+</ul>
+</footer>
+</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+    
+
+</body>
+</html>
