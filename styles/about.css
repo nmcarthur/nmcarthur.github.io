@@ -22,63 +22,50 @@ background-color: black;
 nav{
     color: whitesmoke;
     background-color: black;
-    grid-column-start:1;
-    grid-column-end:7; 
-    grid-row-start:1;
-    grid-row-end:2;
-}
+    grid-column:1/7;
+    grid-row:1/2;
+   }
 
 header{
 border: solid  #333 1px; 
     background-color: black;
-    grid-column-start:2;
-    grid-column-end:4;
-    grid-row-start:2;
-    grid-row-end:3;
-}
+    grid-column:2/4;
+    grid-row:2/3;
+  }
 
 content0{
     border: solid  #333 1px; 
     background-color: black;
-    grid-column-start:4;
-    grid-column-end:6;
-    grid-row-start:2;
-    grid-row-end:3;
-} 
+    grid-column:4/6;
+    grid-row:2/3;
+  } 
 
 content1{
     border: solid  #333 1px; 
     background-color: black;
-    grid-column-start:2;
-    grid-column-end:4;
-    grid-row-start:3;
-    grid-row-end:4;
+    grid-column:2/4;
+    grid-row:3/4;
 } 
 
 main{
     border: solid  #333 1px; 
     background-color: black;
-    grid-column-start:4;
-    grid-column-end:6;
-    grid-row-start:3;
-    grid-row-end:4;
-}
+    grid-column:4/6;
+    grid-row:3/4;
+ }
 
 footer{
     border: solid black 13px;
     padding: 10px;
     background-color:  #333;
-    grid-column-start:1;
-    grid-column-end:7;  
-    grid-row-start:5;
-    grid-row-end:6;
-}
+    grid-column:1/7;
+    grid-row:5/6;
+ }
 
 /*####### social icons########*/
 
 .social-icons {
-  text-align: center;
-}  
+  text-align: center;}  
 
 .social-icons li {
   display:inline-block;
