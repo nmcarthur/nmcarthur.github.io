@@ -20,11 +20,9 @@ background-color: black;
 
 nav{
     color: whitesmoke;
-    grid-column-start:1;
-    grid-column-end:7; 
-    grid-row-start:1;
-    grid-row-end:2;
-}
+    grid-column:1/7;
+    grid-row:1/2;
+  }
 
 header{
     background: url("xenaphotobomb.jpg");
@@ -32,36 +30,28 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     font-family: 'Tangerine', cursive;
-    grid-column-start:2;
-    grid-column-end:6;
-    grid-row-start:2;
-    grid-row-end:3;
-}
+    grid-column:2/6;
+    grid-row:2/3;
+   }
 
 content1{
     padding: 100px 10px 10px 10px;
-    grid-column-start:2;
-    grid-column-end:3;
-    grid-row-start:3;
-    grid-row-end:4;
-} 
+    grid-column:2/3;
+    grid-row:3/4;
+ } 
 
 main{
-    grid-column-start:3;
-    grid-column-end:6;
-    grid-row-start:3;
-    grid-row-end:4;
-}
+    grid-column:3/6;
+    grid-row:3/4;
+   }
 
 footer{
     border: solid black 13px;
     padding: 10px;
     background-color: #333;
-    grid-column-start:1;
-    grid-column-end:7;  
-    grid-row-start:4;
-    grid-row-end:5;
-}
+    grid-column:1/7;
+    grid-row:4/5;
+   }
 
 .mineImage{
     margin: 5%;
@@ -76,7 +66,7 @@ footer{
 
 .social-icons li {
   display:inline-block;
-  list-style-type:none;
+  list-style-type:none
   -webkit-user-select:none;
   -moz-user-select:none;
 }

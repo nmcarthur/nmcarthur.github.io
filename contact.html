@@ -4,7 +4,9 @@
         <title>Contact</title>
         <link rel="icon" href="images/favicon-32x32.png" type="images/x-icon">
         <link href="styles/contact.css" rel="stylesheet">
+        <link href="php/send_form_email.php">
         <link href="https://fonts.googleapis.com/css?family=Charmonman|Marck+Script|Tangerine" rel="stylesheet">
+        
     </head>
     <body>
         <div class="container">
@@ -16,23 +18,74 @@
                     <a class="active" href="contact.html">Contact</a>
                 </div>
             </nav>
+
+
+
     <header>
         <h1>Contact information:</h1>
     </header>
-    <main>
-        <h1>Phone Number: (239)699-2758</h1>
-        <h1>Email: NMCARTHUR@LIVE.COM</h1>
-    </main>
-    <footer>
-        <ul class="social-icons">
-            <li><a href="https://linkedin.com/in/nicholas-mnmcarthur-90318437" target="_blank"><img src="images/linkedin.jpg"></a></li>
-            <li><a href="https://nmcarthur.github.io/" target="_blank"><img src="images/github.jpg"></a></li>
-            <li><a href="https://twitter.com/Nicko83931651?lang=en" target="_blank"><img src="images/Twitter_icon.png" ></a></li>
-            <li><a href="tel:2396992758"><img src="images/phone.jpg" ></a></li>
-            <li><a href="mailto:nmcarthur@live.com"><img src="images/Outlook.png" ></a></li>       
-        </ul>
-    </footer>
+        <main>
+            <form name="contactform" method="post" action="send_form_email.php">
+                <table width="450px">
+                    <tr>
+                        <td valign="top">
+                            <label for="first_name">First Name *</label>
+                        </td>
+                        <td valign="top">
+                            <input  type="text" name="first_name" maxlength="50" size="30">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="last_name"> Last Name *</label>
+                        </td>
+                        <td valign="top">
+                            <input  type="text" name="last_name" maxlength="50" size="30">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                                <label for="email">Email Address *</label>
+                        </td>
+                        <td valign="top">
+                            <input  type="text" name="email" maxlength="80" size="30">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="telephone">Telephone Number</label>
+                        </td>
+                        <td valign="top">
+                            <input  type="text" name="telephone" maxlength="30" size="30">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="comments">Comments *</label>
+                        </td>
+                        <td valign="top">
+                            <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align:center">
+                            <input type="submit" value="Submit"> 
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </main>
+        <footer>
+            <ul class="social-icons">
+                <li><a href="https://linkedin.com/in/nicholas-mnmcarthur-90318437" target="_blank"><img src="images/linkedin.jpg"></a></li>
+                <li><a href="https://nmcarthur.github.io/" target="_blank"><img src="images/github.jpg"></a></li>
+                <li><a href="https://twitter.com/Nicko83931651?lang=en" target="_blank"><img src="images/Twitter_icon.png" ></a></li>
+                <li><a href="tel:2396992758"><img src="images/phone.jpg" ></a></li>
+                <li><a href="mailto:nmcarthur@live.com"><img src="images/Outlook.png" ></a></li>       
+            </ul>
+        </footer>
     </div>
+        
 <script>
         window.onscroll = function() {myFunction()};
         var navbar = document.getElementById("navbar");

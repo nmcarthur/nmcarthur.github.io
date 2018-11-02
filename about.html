@@ -17,9 +17,9 @@
         </div>
     </nav>
     <header>
-        <h1>Career goals:</h1>
-            <p>To obtain an internship with a leading marketing company which provides the opportunity to expand my knowledge and explore career options in website and software development.</p>
-            <p>Self-motivated and dedicated individual willing to assist in the general activities of an organization. Looking forward to gaining an entry to serve the company and broaden my experience level for future benefits.</p> 
+        <button onclick="typeWriter()"><h1>Career goals:</h1></button>
+            <p id="careerGoals"></p>
+        <p id="careerGoals"></p>
     </header>
     <content0>
         <h1>Education:</h1>
@@ -79,6 +79,22 @@
             navbar.classList.remove("sticky");
           }
         }
+    
+    var i = 0;
+var txt = "To obtain an internship with a leading marketing company which provides the opportunity to expand my knowledge and explore career options in website and software development.";
+var speed = 50;
+    
+    var i = 0;
+    var txt = " Self-motivated and dedicated individual willing to assist in the general activities of an organization. Looking forward to gaining an entry to serve the company and broaden my experience level for future benefits.";
+    var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("careerGoals").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
         </script>
 </body>
 </html>

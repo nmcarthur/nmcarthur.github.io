@@ -5,7 +5,7 @@ background-color: black;
 
 .container {
     margin-left:  10%;
-    margin-right: 10%;
+    margin-right: 20%;
     background-color: black ;
     color: aliceblue;
     max-width: 100%;
@@ -15,11 +15,11 @@ background-color: black;
     grid-template-rows:  100px 75px 325px 350px 150px 125px 100px;
  }
 
-nav, footer{
-    Padding 20px;
-}
+/*nav, footer{
+    
+}*/
 
-content0,content0a,content0b,content1,content1a,
+header, content0,content0a,content0b,content1,content1a,
 content1b,content2,content2a,content2b,main{
     border-left: 1px solid #333;
     border-right: 1px solid #333;
@@ -27,8 +27,9 @@ content1b,content2,content2a,content2b,main{
 }
 
 nav{
+   padding: 15px;
     color: whitesmoke;
-    background-color: black;
+     Padding 15px;
     grid-column:1/6;
     grid-row:1/2;
 }
@@ -37,67 +38,56 @@ header{
     border: solid #333 1px;
     text-align: center;
     padding-bottom: 10px;
-    background-color: black;
     grid-column:2/5;
     grid-row:2/3;
 }
 
 content0{ 
-    background-color: black;
     grid-column:2/3;
     grid-row:3/4;    
 }
 
-content0a{ 
-    background-color: black;
-    grid-column:2/3;
+content0a{
+grid-column:2/3;
     grid-row:4/5;  
 }
 
 content0b{ 
-    background-color: black;
     grid-column: 2/3;
     grid-row:5/6;
 }
 
 content1{
-    background-color: black;
     grid-column:3/4;
     grid-row:3/4;
 } 
 
 content1a{
-    background-color: black;
     grid-column:3/4;
     grid-row:4/5;
 } 
 
 content1b{
-    background-color: black;
     grid-column:3/4;
     grid-row:5/6;
 } 
 
 content2{
-    background-color: black;
     grid-column:4/5;
     grid-row:3/4;
 }
 
 content2a{
-    background-color: black;
     grid-column:4/5;
     grid-row:4/5;
    
 } content2b{
-    background-color: black;
     grid-column:4/5;
     grid-row:5/6;
 } 
 
 main{
     border: solid #333 1px;
-    background-color: black;
     grid-column:2/5;
     grid-row:6/7; 
 }
@@ -110,7 +100,7 @@ aside {
 
 footer{
     border: solid black 13px;
-    padding: 10px;
+    padding: 1px;
     background-color: #333;
     grid-column:1/6;
     grid-row:7/8;
