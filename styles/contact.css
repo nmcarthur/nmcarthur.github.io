@@ -12,7 +12,7 @@ background-color: black;
     max-height: 100%;
     display: grid;
     grid-template-columns:  100px 307px 308px 307px 100px;
-    grid-template-rows:  100px 175px 622px  100px;
+    grid-template-rows:  100px 175px 500px  100px;
  }
 
  nav,header, content1, main, aside,footer{
@@ -49,127 +49,66 @@ footer{
     grid-row:5/6;
 }
 
-.mineImage{
-    margin: 10px;
-}
+
+
+    
+
 
 /*#########contact##############*/
-/* General Styles */
-/*html{
-   background:url(http://phutora.com/img/friends3.jpg) no-repeat;
-   background-size: cover;
-   height:100%;
-   background-color: #000;
-}*/
-* {
-   box-sizing:border-box;
-   -webkit-box-sizing:border-box;
-   -moz-box-sizing:border-box;
-   -webkit-font-smoothing:antialiased;
-   -moz-font-smoothing:antialiased;
-   -o-font-smoothing:antialiased;
-   font-smoothing:antialiased;
-   text-rendering:optimizeLegibility;
+
+
+#heading {
+  height: 75px;
+  width: 100%;
+  background-color: #333;
+ 
+  line-height: 75px;
+  font-size: 1.2em;
+}
+#heading > h1 {
+  padding: 0 20px;
+  color: white;
 }
 
-h1 {
-   margin: 10px 0 0 0;
-}
-h4{
-   margin: 0 0 20px 0;
-}
-#contact-form {
-   background: #333;
-   padding: 10px 20px 30px 20px;
-   max-width:100%;
-   float: left;
-   left: 50%;
-   position: absolute;
-   margin-top:30px;
-   margin-left: -260px;
-   border-radius:7px;
-   -webkit-border-radius:7px;
-   -moz-border-radius:7px;
-}
-#contact-form input,   
-#contact-form select,   
-#contact-form textarea,   
-#contact-form label { 
-   font-size: 15px;  
-   margin-bottom: 2px;
-} 
-
-#contact-form input,   
-#contact-form select,   
-#contact-form textarea { 
-   width:100%;
-   background: white;
-   border: 0; 
-   -moz-border-radius: 4px;  
-   -webkit-border-radius: 4px;  
-   border-radius: 4px;
-   margin-bottom: 25px;  
-   padding: 5px;  
-} 
-
-#contact-form input:focus,   
-#contact-form select:focus,   
-#contact-form textarea:focus {  
-   background-color: white; 
+form {
+  padding: 20px;
+  height: 100%;
 }
 
-#contact-form textarea {
-   width:100%;
-   height: 150px;
+input {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  padding: 3px;
+  max-width: 100%;
 }
 
-#contact-form button[type="submit"] {
-   cursor:pointer;
-   width:100%;
-   border:none;
-   background:#4CAF50;
-   color:white;
-   margin:0 0 5px;
-   padding:10px;
-   border-radius:5px;
+.border {
+    border: 1px solid lightgray;
 }
 
-#contact-form button[type="submit"]:hover {
-  
-   -webkit-transition:background 0.3s ease-in-out;
-   -moz-transition:background 0.3s ease-in-out;
-   transition:background-color 0.3s ease-in-out;
-}
-#contact-form button[type="submit"]:active {
-   box-shadow:inset 0 1px 3px rgba(0,0,0,0.5);
-}
-input:required, textarea:required {  
-   box-shadow: none;
-   -moz-box-shadow: none;  
-   -webkit-box-shadow: none;  
-   -o-box-shadow: none;  
-} 
-#contact-form .required {  
-   font-weight:bold;  
-   color: #E5E6E7;      
+textarea {
+  margin-bottom: 10px;
+  resize: none;
+  width: 100%;
+  height: 40%;
+  font-size: 1.2em;
+  padding: 3px;
+  border: 1px solid lightgray;
 }
 
-#failure, #success {
-   color: #6EA070; 
-   display:none;  
+#button {
+  padding: 5px;
+}
+
+#button:hover {
+  color: #AD1457;
 }
 
 
-@media only screen and (max-width: 580px) {
-   #contact-form{
-      left: 3%;
-      margin-right: 3%;
-      width: 88%;
-      margin-left: 0;
-      padding-left: 3%;
-      padding-right: 3%;
-   }
-}
+
+
+
 /*####### social icons########*/
 .social-icons {
   text-align: center;
