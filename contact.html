@@ -8,38 +8,31 @@
         
     </head>
     <body>
-        <div class="container">
-            <nav>
-                <div id="navbar">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="workhistory.html">Work History</a>
-                    <a class="active" href="contact.html">Contact</a>
-                </div>
-            </nav>
-    <header>
-        <h1>Contact information:</h1>
-    </header>
-        <main>
-             <script language="javascript">var sa_email_id = '89859-1fb8f';var sa_sent_text = 'Thank you for contacting me. I will get back to you soon.';
-        </script>
-        <script language="javascript" src="http://s1.smartaddon.com/sa_htmlform.js">
-        </script>
-            <div id="sa_contactdiv">
-                <form name=sa_htmlform style="margin:0px" onsubmit="return sa_contactform()">
-                <table>
-                <tr><td>Name:<br><input type="text" name="name" /></td></tr>
-                <tr><td>First Name:<br><input type="text" name="firstname" /></td></tr>
-                <tr><td>E-mail Address: <span style="color:#D70000">*</span><br><input type="text" name="email" required="true" /></td></tr>
-                <tr><td>Phone Number:<br><input type="text" name="number" /></td></tr>
-                <tr><td>Subject: <span style="color:#D70000">*</span><br><input type="text" name="subject" required="true" /></td></tr>
-                <tr><td>Message: <span style="color:#D70000">*</span><br><textarea name="message" required="true"></textarea></td></tr>
-                <tr><td><input type="submit" value="Send Message" style="font-weight:bold"></td></tr>
-                </table>
-                </form><div style="padding-top:10px"><a href="http://www.smartaddon.com/contact_form.html">Contact Form</a> provided by SmartAddon.com</div>
-            </div>
-          
-        </main>
+            <div class="container">
+                <nav>
+                    <div id="navbar">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="workhistory.html">Work History</a>
+                        <a class="active" href="contact.html">Contact</a>
+                    </div>
+                </nav>
+                    <header>
+                        <h1>Contact information:</h1>
+                    </header>
+                    <main>
+                        <h2>Send e-mail to nmcarthur@live.com:</h2>
+                    <form action="mailto:nmcarthur@live.com" method="GET" enctype="text/plain">
+                        Name:<br>
+                    <input type="text" name="name"><br>
+                    E-mail:<br>
+                    <input type="text" name="mail"><br>
+                    Comment:<br>
+                    <input type="text" name="comment" size="50"><br><br>
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Reset">
+                    </form>
+                    </main>
         <footer>
             <ul class="social-icons">
                 <li><a href="https://linkedin.com/in/nicholas-mnmcarthur-90318437" target="_blank"><img src="images/linkedin.jpg"></a></li>
@@ -49,8 +42,8 @@
                 <li><a href="mailto:nmcarthur@live.com"><img src="images/Outlook.png" ></a></li>       
             </ul>
         </footer>
-    </div>
-       
+    
+        </div>
         <script>
         window.onscroll = function() {myFunction()};
         var navbar = document.getElementById("navbar");
